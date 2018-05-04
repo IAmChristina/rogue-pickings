@@ -31,12 +31,18 @@ header h2{
 
 nav{
   text-align: right;
+  font-weight: bold
 }
 
 li{
   text-decoration: none;
   display: inline-block;
   padding: 2%;
+}
+
+a{
+  text-decoration: none;
+  color: #679a40;
 }
 
 .banner-image{
@@ -54,11 +60,11 @@ li{
 /***** welcome and info********/
 
 .border-bottom{
-  border-bottom: 1px gray solid;
+  border-bottom: 2px #e0e0e0 solid;
 }
 
 .border-left{
-  border-left: 1px gray solid;
+  border-left: 2px #e0e0e0 solid;
   padding-left: 4%;
 }
 
@@ -94,8 +100,40 @@ footer{
   color: #679a40;
 }
 
+/********* media queries ***********/
+
+@media screen and (max-width: 769px){
+  .border-left{
+    border-left: none;
+    border-bottom: 2px #e0e0e0 solid;
+  }
+
+  .blocks{
+    text-align: center;
+  }
+
+  .border-bottom{
+    border-bottom: none;
+    border-top: 2px #e0e0e0 solid;
+  }
+
+  .border-top{
+    border-top: 2px #e0e0e0 solid;
+  }
+}
+
+@media screen and (max-width: 576px){
+  header{
+    text-align: center;
+  }
+
+  header nav{
+    text-align: center;
+
+  }
+}
 
 
 
 /**** colors ****/
-/* green: ; gray: ; */
+/* green: #679a40; gray: #e0e0e0; */
